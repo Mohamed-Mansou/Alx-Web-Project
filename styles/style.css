@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: mediumslateblue;
+    color: white;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+header{
+    font-size: 25px;
+}
+
+header,
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+form input ,
+button{
+    padding:0.5rem ;
+    padding-left: 1px;
+    font-size:1.8rem ;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+}
+
+form button{
+    color: yellow;
+    background: white;
+    margin-left: 0.5rem;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+form button:hover{
+    color: white;
+    background: yellow;
+}
+
+i{
+    margin-top: 0.3rem;
+    margin-left:8px ;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    list-style: none;
+    min-width: 30%;
+}
+
+select{
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 10rem;
+    height: 3.2rem;
+    padding: 1rem;
+    border-radius: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.select::after{
+    content: "\25bc";
+    position: absolute;
+    background: yellow;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.select:hover::after{
+    background: white;
+    color: yellow;
+}
+
