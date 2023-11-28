@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 body{
-    background-color: mediumslateblue;
+    background-color: #5c90ac;
     color: white;
     min-height: 100vh;
     font-family: sans-serif;
 }
 header{
     font-size: 25px;
-    color:#fff;
+    color:#1c536c;
 }
 
 header,
@@ -29,6 +29,7 @@ button{
     border: none;
     background: white;
     border-radius: 2rem;
+    outline: none;
 }
 
 .todo-input{
@@ -39,10 +40,12 @@ button{
 }
 
 form button{
-    color: yellow;
+    color: #f4ecac;
     background: white;
     margin-left: 0.5rem;
     transition: all 0.3s ease;
+    font-size: 25px;
+    color: #333;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -51,13 +54,13 @@ form button{
 
 form button:hover{
     color: white;
-    background: yellow;
+    background: #f4ecac;
 }
 
-i{
+/* i{
     margin-top: 0.3rem;
     margin-left:8px ;
-}
+} */
 
 .todo-container{
     display: flex;
@@ -96,7 +99,7 @@ select{
 .select::after{
     content: "\25bc";
     position: absolute;
-    background: yellow;
+    background: #f4ecac;
     top: 0;
     right: 0;
     padding: 1rem;
@@ -110,7 +113,7 @@ select{
 
 .select:hover::after{
     background: white;
-    color: yellow;
+    color: #f4ecac;
 }
 
 .todo-container {
@@ -151,7 +154,7 @@ select{
 }
 
 .complete-btn {
-    background: rgb(255, 200, 0);
+    background: #f4ecac;
 }
 
 .trash-btn {
