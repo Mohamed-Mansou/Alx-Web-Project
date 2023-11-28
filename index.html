@@ -16,23 +16,24 @@
 </head>
 <body>
     <header>
-        MY TO DO-LIST
+        <h1>Task Master</h1>
     </header>
     <form action="">
-        <input type="text" class="todo-input">
+        <input type="text" class="todo-input" placeholder="Add Your Task">
         <button class="todo-button" type="submit">
-            <i class="fas fa-plus-circle"></i>
+            <i class="fas fa-plus-circle fa-lg"></i>
         </button>
         <div class="select">
             <select name="todos" class="filter-todo">
-                <option value="All">All</option>
-                <option value="Completed">Completed</option>
-                <option value="Incompleted">Incompleted</option>
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
             </select>
         </div>
     </form>
+
     <div class="todo-container">
-        <ul class="todo-list"></ul> 
+        <ul class="todo-list"></ul>
     </div>
 <script src="script.js"></script>
 </body>
