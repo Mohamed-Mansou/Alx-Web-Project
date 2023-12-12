@@ -8,13 +8,47 @@ body{
     color: white;
     min-height: 100vh;
     font-family: sans-serif;
-}
-header{
-    font-size: 25px;
-    color:#1c536c;
+    background-image: url(../Images/wallpaper.jpg);
 }
 
-header,
+.links li,
+.links a{
+text-decoration: none;
+}
+header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px ;
+        color: #eee;
+}
+
+.links{
+    list-style: none;
+}
+
+.links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.links li a{
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    color: #eee;
+    font-weight: bold;
+}
+
+.links li a:hover{
+    color: #333;
+}
+
+
+
+
 form{
     display: flex;
     justify-content: center;

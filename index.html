@@ -14,11 +14,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,100&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
+
 <body>
+
     <header>
-        <h1>Task Master</h1>
+        <h1>
+            Task Master
+        </h1>
+        <nav>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signin.html">Signin</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <form action="">
+
+    <div class="container">
+        <form action="">
         <input type="text" class="todo-input" placeholder="Add Your Task">
         <button class="todo-button" type="submit">
             Add
@@ -35,6 +48,8 @@
     <div class="todo-container">
         <ul class="todo-list"></ul>
     </div>
+    </div>
+
 <script src="script.js"></script>
 </body>
 </html>
